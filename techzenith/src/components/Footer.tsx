@@ -2,19 +2,19 @@ import React, { useRef } from 'react';
 import { Facebook, Twitter, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
-import { useGSAPAnimation } from '../hooks/useGSAPAnimation';
-import { useReducedMotion } from '../hooks/useReducedMotion';
+// import { useGSAPAnimation } from '../hooks/useGSAPAnimation';
+// import { useReducedMotion } from '../hooks/useReducedMotion';
 
 const Footer: React.FC = () => {
   const footerRef = useRef<HTMLElement>(null);
-  const prefersReducedMotion = useReducedMotion();
+  // const prefersReducedMotion = useReducedMotion();
 
-  useGSAPAnimation(footerRef, {
-    opacity: 0,
-    y: 50,
-    duration: prefersReducedMotion ? 0 : 0.8,
-    ease: 'power2.out',
-  });
+  // useGSAPAnimation(footerRef, {
+  //   opacity: 1,
+  //   y: 50,
+  //   duration: prefersReducedMotion ? 0 : 0.8,
+  //   ease: 'power2.out',
+  // });
 
   return (
     <footer ref={footerRef} className="bg-gray-900 text-gray-300">
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
               <a href="#" className="hover:text-indigo-400 transition-colors"><Linkedin size={20} /></a>
             </div>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
               <li><Link to="/contact" className="hover:text-indigo-400 transition-colors">Contact</Link></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
               <li><Link to="/services/staff-augmentation" className="hover:text-indigo-400 transition-colors">Staff Augmentation</Link></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p>&copy; {new Date().getFullYear()} Tech Zenith. All rights reserved.</p>
         </div>

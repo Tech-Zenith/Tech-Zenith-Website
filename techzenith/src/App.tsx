@@ -10,6 +10,7 @@ import Cybersecurity from './pages/services/Cybersecurity';
 import CRMSolutions from './pages/services/CRMSolutions';
 import CloudSolutions from './pages/services/CloudSolutions';
 import StaffAugmentation from './pages/services/StaffAugmentation';
+import WindowsSolution from './pages/services/WindowsSolution';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/services/cybersecurity" element={<Cybersecurity />} />
         <Route path="/services/crm-solutions" element={<CRMSolutions />} />
+        <Route path="/services/windows-solutions" element={<WindowsSolution />} />
         <Route path="/services/cloud-solutions" element={<CloudSolutions />} />
         <Route path="/services/staff-augmentation" element={<StaffAugmentation />} />
       </Routes>
